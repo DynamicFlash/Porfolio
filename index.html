@@ -46,7 +46,7 @@
                        Goa India, Phone : +919511851440
                         <a class="text-primary" href="mailto:name@email.com">aldrin.a.fernandes@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">5 years experienced Machine Learning Engineer with experience across diverse industries such as Automotive, Banking, Manufacturing, Energy and Retail. I am collaborative and passionate about continuous learning and have a proven ability to implement robust systems within expected project timelines for customer-centric and stakeholder-centric applications. Extensive experience collaborating with customers to elicit requirements, design, and implement robust automated machine learning pipelines, ensuring efficient and accurate model deployments.</p>
+                    <p class="lead mb-5">I am a highly skilled Machine Learning Engineer with over 6 years of experience across diverse industries such as Automotive, Banking, Manufacturing, Energy, and Retail. I am collaborative and passionate about continuous learning and have a proven ability to implement robust systems within expected project timelines for customer-centric and stakeholder-centric applications. I have extensive experience collaborating with customers to elicit requirements, design, and implement robust automated machine learning pipelines, ensuring efficient and accurate model deployments.</p>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-python"></i></li>
@@ -63,6 +63,7 @@
                         <li class="list-inline-item"><span class="iconify" data-icon="cib:kubernetes"></span></li>
                         <li class="list-inline-item"><span class="iconify" data-icon="cib:redis"></span></li>
                         <li class="list-inline-item"><span class="iconify" data-icon="tabler:brand-databricks"></span></li>
+                        <li class="list-inline-item"><span class="iconify" data-icon="simple-icons:openai"></span></li>
                     </ul>
                     <div class="subheading mb-3">Connect with me on: </div>
                     <div class="social-icons">
@@ -84,7 +85,16 @@
                             <ul class="fa-ul mb-0">
                                 <li>
                                     <span class="fa-li"><i class="fa fa-caret-right"></i></span>
-                                    Productionized Recommendation system with pipeline for ingestion, enrichment and scoring. Also implemented model drift using data drift with summary statics.
+                                    Developed an LLM gateway service to provide seamless access to both cloud-based and on-premises Large Language Models (LLMs). This service incorporates features such as unified client APIs, guardrails for user queries and LLM responses, and rate-limiting capabilities at both the model and application levels.
+
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fa fa-caret-right"></i></span>
+                                    Implemented RAG for a LLM based chatbot for customer support team, that reduced time per resolution and training for the customer support executives.
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fa fa-caret-right"></i></span>
+                                    Productionized Recommendation system using high-throughput APIs, with pipeline for ingestion, enrichment and scoring. 
                                 </li>
                                 <li>
                                     <span class="fa-li"><i class="fa fa-caret-right"></i></span>
@@ -96,11 +106,11 @@
                                 </li>
                                 <li>
                                     <span class="fa-li"><i class="fa fa-caret-right"></i></span>
-                                    Performed feature engineering for predicting fuel economy and built pipelines for feature engineering and scoring in Azure Synapse with scheduled trigger.
+                                    Performed feature engineering for predicting fuel economy and built pipelines for feature engineering and scoring in Azure Synapse with scheduled trigger. Also implemented model drift using data drift with summary statics.
                                 </li>              
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Projects - 4</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">Projects - 6</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -128,23 +138,61 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Analyst-Machine Learning Engineer</h3>
+                            <h3 class="mb-0">Machine Learning Engineer</h3>
                             <div class="subheading mb-3">Tiger Analytics</div>
+                            <h4>LLM Gateway</h4>
                             <ul>
-                                <li>Trained item-based collaborative recommendation filter for approx. 50000 products, delivering recommendations through a high-throughput API utilizing the Top-K filter from Redis. [PySpark, Fast-API, Azure Databricks, Kubernetes, Debezium, and Redis Enterprise Solution]</li>
-                                <li>Implemented ingestion, enrichment and scoring workflows for the recommendation system in Databricks and scheduled them as per requirements. [Databricks, Oracle SQL]</li>
-                                <li>Performed exploratory data analysis (EDA) for a solar irradiance prediction project. Built NBEATSx model for time series forecasting with MAPE between 3-7% and served the model using AzureML managed endpoint. [Nixtla, Pytorch Forecasting, pandas]</li>
-                                <li>Modelled Digital Twins for visualizing the machine vision-based solution on the factory floor using Azure Digital Twin with functionality using Azure Functions. Deployed the model on Azure IoTHub devices with IoT Edge runtime having the capabilities of updating the current model in the future, with local and cloud storage syncing of data, and gateway capabilities. [Azure IoTHub, Azure Digital Twin, Azure Function]</li>
-                                <li>Worked on feature engineering for a regression model that was used to predict fuel economy, with validation for generated features. [PySpark, Azure Databrick]</li>
-                                <li>Implemented Azure Synapse pipelines for feature engineering and scoring pipeline that was scheduled daily for inference. [Azure Synapse and Databricks]</li>
+                                <li>Developed a LLM gateway service to facilitate seamless access to both cloud-based and on-premises Large Language Models (LLMs).[Azure OpenAI service, Ollama, FastAPI, Docker, Azure Kubernetes Service, Nginx]</li>
+                                <li>The service abstracted the complexities of model interactions, providing a unified API that simplifies development and maintenance of LLM-powered applications. [Azure AI Search, Azure OpenAI service]</li>
+                                <li>To ensure high availability, the LLMs and the service were strategically distributed across multiple regions.[Azure Kubernetes Service, Akamai]</li>
+                                <li>CI/CD pipelines were developed to build and deploy the service using Github workflows across multiple regions and different environment.[Github Workflows]</li>
+                                <li>Furthermore, implemented rate limiting mechanisms at both the application and model level to optimize costs and enhance resource visibility.[Okta, Redis]</li>
+                            </ul>
+                            <h4>LLM based Chatbot for customer support executives</h4>
+                            <ul>
+                                <li>Implemented RAG for the LLM based Chatbot that leveraged Azure AI Search.[Azure AI Search, Azure OpenAI service, FastAPI, Docker, Azure Kubernetes Service]</li>
+                                <li>Developed extraction framework that converts pages of documents to image and then leverages GPT-4o to extract contains like images, tabular data etc. without much hallucination.[Azure AI Search, Azure OpenAI service]</li>
+                                <li>Implemented pipelines to ingest and index various document of different formats (PDF, DOCX, txt) from Azure Blob Storage into Azure AI Search, incorporating semantic chunking using GPT-4o.[ Azure OpenAI, LangChain, LibreOffice]</li>
+                                <li> CI/CD pipelines were developed to build and deploy the service using Github workflows across multiple regions and different environment.[Github Workflows]</li>
+                            </ul>
+                            <h4>Recommendation systems for e-commerce</h4>
+                            <ul>
+                                <li>Trained item-based collaborative recommendation filter for approx. 50000 products of the total 125000.[PySpark, Azure Databricks]</li>
+                                <li>Delivering recommendations through a high-throughput API utilizing the Top-K filter from Redis. [ Fast-API, Kubernetes, Debezium, and Redis Enterprise Solutions]</li>
+                                <li>CI/CD pipelines were developed to build and deploy the service using Github workflows. [Github Workflows]</li>
+                                <li>Implemented ingestion, enrichment and scoring workflows for the recommendation system in Databricks workflows and scheduled them as per requirements. [Databricks, Oracle SQL]</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2022 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2023 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Analyst-Machine Learning Engineer</h3>
+                            <div class="subheading mb-3">Tiger Analytics</div>
+                            <h4>Solar Irradiance Prediction with NBEATSx</h4>
+                            <ul>
+                                <li>Performed exploratory data analysis (EDA) for a solar irradiance prediction project.[Pandas, Matplotlib]</li>
+                                <li>Built NBEATSx model for forecasting solar irradiance with MAPE between 3-7%.[Nixtla, Pytorch Forecasting, pandas]</li>
+                                <li>Leveraged AzureML's managed endpoint for model serving and inference.[Azure ML]</li>
+                            </ul>
+                            <h4>Azure-Based Digital Twins for Smart Manufacturing with Machine Vision</h4>
+                            <ul>
+                                <li>Modelled Digital Twins for visualizing the machine vision-based solution on the factory floor using Azure Digital Twin with functionality using Azure Functions.[Azure Digital Twin, Azure Functions, ONNX, OpenVINO]</li>
+                                <li>Implemented functionalities for automated as well as manual update of PLC values from digital twin interface using KepServerEX and OPC interface APIs.[Kepserver, OPC]</li>
+                                <li>Deployed the model on Azure IoTHub devices with IoT Edge runtime having the capabilities of updating the current model in the future, with local and cloud storage syncing of data, and gateway capabilities.[Azure IoTHub, Azure IoT Edge Runtime]</li>
+                            </ul>
+                            <h4>Fleet Driver Analysis Platform</h4>
+                            <ul>
+                                <li>Worked on feature engineering for a regression model that was used to predict fuel economy, with validation for generated features. [PySpark, Azure Databrick]</li>
+                                <li>Implemented Azure Synapse pipelines for feature engineering and scoring pipeline that was scheduled daily for inference. [Azure Synapse, Azure Databricks]</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2022 - June 2023</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Systems Engineer- Machine Learning Engineer</h3>
-                            <div class="subheading mb-3">TATA Consultency Services</div>
+                            <div class="subheading mb-3">TATA Consultancy Services</div>
                             <h4>Developing Subsystems for L2 and L3 Autonomous Vehicle</h4>
                             <ul>
                                 <li>Developed Model Predictive Controller that used transfer learning, based on NVIDIA's DAVE 2 architecture to compute states in a Carla simulation environment. [Python and Keras].</li> 
@@ -154,9 +202,9 @@
                             <h4>Fraud Detection API for Banking Systems:</h4>
                             <ul>
                                 <li>Data ingestion and enrichment for data from different regions and building of training dataset with limited entries. [PySpark and SparkSQL] </li>
-                                <li>Perform hyperparameter tuning of the model using Hyperopt and SparkTrials.[PySpark]</li>
-                                <li>Training and testing classification model on full dataset and reporting on metrics.[PySpark]</li>
-                                <li>Implementation of Spark Structured Streaming service for the deployed model.[PySpark]</li>
+                                <li>Performed hyperparameter tuning of the model using Hyperopt and SparkTrials.[PySpark]</li>
+                                <li>Training and testing classification model on larger dataset and reporting on metrics.[PySpark]</li>
+                                <li>Implementation of a Spark Structured Streaming service for real-time model inference.[PySpark]</li>
                             </ul>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">January 2019 - July 2022</span></div>
@@ -183,7 +231,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Agnel Institute of Technology and Design</h3>
                             <div class="subheading mb-3">Bachelor of Engineering in Electronics and Communication Engineering</div>
-                            <div><b>Project</b> : Implemented Biometric attendance system using fingerprint minutiae extraction and storing data on a remote server. Authenticted access was provided to users.</div>
+                            <div><b>Project</b> : Implemented Biometric attendance system using fingerprint minutiae extraction and storing data on a remote server. Authenticated access was provided to users.</div>
                             <p><b>Percentage</b> : 71%</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2014 - August 2018</span></div>
@@ -193,16 +241,16 @@
                             <h3 class="mb-0">Projects</h3>
                             <br>
                             <h3><a class="text-primary" href="https://dynamicflash.github.io/Spark_Kafka/">Secure Spark Structured Streaming using Kafka</a></h3>
-                            <p class="mb-0">comprehensive guide on establishing connection with secure Kafka cluster using Spark Structured Streaming.</p>
+                            <p class="mb-0">Comprehensive guide on establishing connection with secure Kafka cluster using Spark Structured Streaming.</p>
                             <br>
                             <h3><a class="text-primary" href="https://github.com/DynamicFlash/Layerwise_relevance_propogation_tf/blob/main/SDC_explainable.ipynb">XAI MODEL USING LAYERWISE RELEVANCE PROPAGATION</a></h3>
-                            Models used in most of the use cases are considered as a black box but this consideration doesn't sit well when lifes are at stake. In Medical and Automotive applications of AI, we need to justify what are the artifect that the AI model is using for the output. This Python notebook is an Tensorflow implementation of LRP model implement in Pytorch by it's <a class="text-primary" href="https://git.tu-berlin.de/gmontavon/lrp-tutorial">authors</a>.</p>
+                            Models used in most of the use cases are considered as a black box but this consideration doesn't sit well when lives are at stake. In Medical and Automotive applications of AI, we need to justify what are the artifact that the AI model is using for the output. This Python notebook is an Tensorflow implementation of LRP model implement in Pytorch by it's <a class="text-primary" href="https://git.tu-berlin.de/gmontavon/lrp-tutorial">authors</a>.</p>
                             <br>
                             <h3><a class="text-primary" href="https://github.com/DynamicFlash/VisualBackProp_tf2/blob/main/VisualBackProp.ipynb">XAI model using VisualBackProp</a></h3>
-                            <p class="mb-0">A non-gradient-based XAI model that can be used for nearly real-time interpretation. I have also proposed a bespoke model that uses equal weights for averaging at higher layers and emphasises more on high order average maps for interpretability of the model than on lower-order maps for preserving the interpretation details.</p>
+                            <p class="mb-0">A non-gradient-based XAI model that can be used for nearly real-time interpretation. I have also proposed a bespoke model that uses equal weights for averaging at higher layers and emphases more on high order average maps for interoperability of the model than on lower-order maps for preserving the interpretation details.</p>
                             <br>
                             <h3>Transfer Learning for Autonomous (DAVE2 model)</h3>
-                            <p class="mb-0">This is the vanila implementation of Nvidia's DAVE2 model without violating any NDAs. This is an end to end model implemented, XAI model(Visualbackprop) is in progress </p>
+                            <p class="mb-0">This is the vanilla implementation of Nvidia's DAVE2 model without violating any NDAs. This is an end to end model implemented, XAI model(Visualbackprop) is in progress </p>
                         </div>
                     </div>
                 </div>
