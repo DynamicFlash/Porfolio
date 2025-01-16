@@ -143,23 +143,23 @@
                             <h4>LLM Gateway</h4>
                             <ul>
                                 <li>Developed a LLM gateway service to facilitate seamless access to both cloud-based and on-premises Large Language Models (LLMs).[Azure OpenAI service, Ollama, FastAPI, Docker, Azure Kubernetes Service, Nginx]</li>
-                                <li>The service abstracted the complexities of model interactions, providing a unified API that simplifies development and maintenance of LLM-powered applications. [Azure AI Search, Azure OpenAI service]</li>
+                                <li>The service abstracted the complexities of model interactions, providing a unified API that simplifies development and maintenance of LLM-powered applications.[Azure AI Search, Azure OpenAI service]</li>
                                 <li>To ensure high availability, the LLMs and the service were strategically distributed across multiple regions.[Azure Kubernetes Service, Akamai]</li>
                                 <li>CI/CD pipelines were developed to build and deploy the service using Github workflows across multiple regions and different environment.[Github Workflows]</li>
                                 <li>Furthermore, implemented rate limiting mechanisms at both the application and model level to optimize costs and enhance resource visibility.[Okta, Redis]</li>
                             </ul>
                             <h4>LLM based Chatbot for customer support executives</h4>
                             <ul>
-                                <li>Implemented RAG for the LLM based Chatbot that leveraged Azure AI Search.[Azure AI Search, Azure OpenAI service, FastAPI, Docker, Azure Kubernetes Service]</li>
+                                <li>Implemented RAG for the LLM based chatbot that leveraged Azure AI Search.[Azure AI Search, Azure OpenAI service, FastAPI, Docker, Azure Kubernetes Service]</li>
                                 <li>Developed extraction framework that converts pages of documents to image and then leverages GPT-4o to extract contains like images, tabular data etc. without much hallucination.[Azure AI Search, Azure OpenAI service]</li>
                                 <li>Implemented pipelines to ingest and index various document of different formats (PDF, DOCX, txt) from Azure Blob Storage into Azure AI Search, incorporating semantic chunking using GPT-4o.[ Azure OpenAI, LangChain, LibreOffice]</li>
-                                <li> CI/CD pipelines were developed to build and deploy the service using Github workflows across multiple regions and different environment.[Github Workflows]</li>
+                                <li>CI/CD pipelines were developed to build and deploy the service using GitHub workflows across multiple regions and different environment.[GitHub Workflows]</li>
                             </ul>
                             <h4>Recommendation systems for e-commerce</h4>
                             <ul>
                                 <li>Trained item-based collaborative recommendation filter for approx. 50000 products of the total 125000.[PySpark, Azure Databricks]</li>
-                                <li>Delivering recommendations through a high-throughput API utilizing the Top-K filter from Redis. [ Fast-API, Kubernetes, Debezium, and Redis Enterprise Solutions]</li>
-                                <li>CI/CD pipelines were developed to build and deploy the service using Github workflows. [Github Workflows]</li>
+                                <li>Build a service for Delivering recommendations through a high-throughput API utilizing the Top-K filter from Redis. [ Fast-API, Kubernetes, Debezium, and Redis Enterprise Solutions]</li>
+                                <li>CI/CD pipelines were developed to build and deploy the service using GitHub workflows. [GitHub workflows]</li>
                                 <li>Implemented ingestion, enrichment and scoring workflows for the recommendation system in Databricks workflows and scheduled them as per requirements. [Databricks, Oracle SQL]</li>
                             </ul>
                         </div>
@@ -195,8 +195,8 @@
                             <div class="subheading mb-3">TATA Consultancy Services</div>
                             <h4>Developing Subsystems for L2 and L3 Autonomous Vehicle</h4>
                             <ul>
-                                <li>Developed Model Predictive Controller that used transfer learning, based on NVIDIA's DAVE 2 architecture to compute states in a Carla simulation environment. [Python and Keras].</li> 
-                                <li>Road sign classification and appropriate reconstruction on the cluster. [PySpark and Keras]</li> 
+                                <li>Developed a component of a Model Predictive Controller (MPC) that utilized NVIDIA's DAVE-2 architecture to compute states within a CARLA simulation environment. Subsequently, transfer learning was employed to fine-tune the MPC for real-world scenarios.[PySpark and Keras]</li> 
+                                <li>Road sign identification for navigating through waypoints, followed by appropriate reconstruction on the cluster. [PySpark and Keras]</li> 
                                 <li>Implemented a machine learning-enabled report analysis tool to classify defects in systems with an accuracy of 94%. [Python, Keras, Scikit-Learn]</li>
                             </ul>
                             <h4>Fraud Detection API for Banking Systems:</h4>
